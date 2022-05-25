@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .number {
+        background-color:lightgreen;
+        border:none;
+        width:70px;
+        height:30px;
+      }
+      .operand {
+        background-color:grey;
+        border:none;
+        width:70px;
+        height:30px;
+      }
+
+      .c {
+        background-color:red;
+        border:none;
+        width:70px;
+        height:30px;
+      }
+
+      .equal{
+        background-color:blue;
+        border:none;
+        width:295px;
+        height:30px;
+      }
+    </style>
+    <script src="Kalkulator.js"></script>
+  </head>
+  <body>
+    <center>
+    <hr width="70%" size="10%" color="black">
+    <font size="4" style="arial"> K a l k u l a t o r </font>
+    <hr width="70%" size="2%" color="black">
+    <form name="fform">
+      <table>
+        <tr style="outline: thin solid;">
+          <td colspan="4" align="right"><span id="span">⠀</span></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="number(1)" class="number" value="1"><font color="white" size="4">1</font></button></td>
+          <td><button type="button" onclick="number(2)" class="number" value="2"><font color="white" size="4">2</font></button></td>
+          <td><button type="button" onclick="number(3)" class="number" value="3"><font color="white" size="4">3</font></button></td>
+          <td><button type="button" onclick="operand('*')" class="operand" value="*"><font color="white" size="4">*</font></button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="number(4)" class="number" value="4"><font color="white" size="4">4</font></button></td>
+          <td><button type="button" onclick="number(5)" class="number" value="5"><font color="white" size="4">5</font></button></td>
+          <td><button type="button" onclick="number(6)" class="number" value="6"><font color="white" size="4">6</font></button></td>
+          <td><button type="button" onclick="operand('/')" class="operand" value="/"><font color="white" size="4">/</font></button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="number(7)" class="number" value="7"><font color="white" size="4">7</font></button></td>
+          <td><button type="button" onclick="number(8)" class="number" value="8"><font color="white" size="4">8</font></button></td>
+          <td><button type="button" onclick="number(9)" class="number" value="9"><font color="white" size="4">9</font></button></td>
+          <td><button type="button" onclick="operand('-')" class="operand" value="-"><font color="white" size="4">-</font></button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="number(0)" class="number" value="0"><font color="white" size="4">0</font></button></td>
+          <td><button type="button" onclick="number('.')" class="number" value="."><font color="white" size="4">.</font></button></td>
+          <td><button type="button" onclick="c()" class="c" value="c"><font color="white" size="4">C</font></button></td>
+          <td><button type="button" onclick="operand('+')" class="operand" value="+"><font color="white" size="4">+</font></button></td>
+        </tr>
+        <tr>
+          <td colspan="4"><button type="button" onclick="equal()" class="equal" value=""><font color="white" size="4">=</font></button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
