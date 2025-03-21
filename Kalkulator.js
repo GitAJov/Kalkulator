@@ -1,3 +1,5 @@
+console.log("halo");
+
 let status = { //syarat-syarat yang harus dipenuhi agar tombol berfungsi.
   allowKoma : false, //perhitungan tidak boleh dimulai dengan koma, koma tidak boleh ada sebelum dan setelah operan.
   adaKoma : false, //tidak boleh ada dua koma dalam satu angka
